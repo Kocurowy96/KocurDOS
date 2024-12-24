@@ -9,14 +9,14 @@ echo "|_|\_\\___| \___|\___|\___|_|____/|____/ \___/ \____||____/ "
 echo ""
 
 function display_prompt() {
-    echo -n "$(pwd) | KocurDOS> "
+    echo -n "$(pwd) | KocurDOS>> "
 }
 
 function help() {
-    echo "KocurDOS ver. v1.0.9"
+    echo "KocurDOS ver. v1.1.0"
     echo ""
-    echo "Dostępne komendy:"
-    echo "notatnik  - Otwiera notatnik"
+    echo "about      - Wyświetla informacje o KocurDOS"
+    echo "notatnik   - Otwiera notatnik"
     echo "kalkulator - Otwiera kalkulator"
     echo "tree       - Przeglądarka plików"
     echo "clear      - Czyści ekran"
@@ -29,10 +29,23 @@ function help() {
     echo "del        - Usuwa pliki"
     echo "rename     - Zmienia nazwę plików"
     echo "type       - Wyświetla zawartość plików tekstowych"
-    echo "flash      - Wgrywa nowe oprogramowanie z bios.kocurdos (tylko dla zaawansowanych!) "
+    echo "flash      - Aktulizuje oprogramowanie z bios.kocurdos"
     echo "knano - Otwiera nano w KocurDOS"
     echo "help       - Wyświetla pomoc"
     echo "exit       - Wyjście z KocurDOS"
+}
+
+function about() {
+    echo ""
+    echo "KocurDOS"
+    echo "Wersja: 1.1.0"
+    echo ""
+    echo "System KocurDOS jest stworzony przez Kocurowy96"
+    echo "Jest on open-source czyli każdy może zobaczyć jego kod źródłowy"
+    echo "System jest napisany z pomocą AI"
+    echo "Wrazie jakiś błędów zgłoś je na GitHubie projektu"
+    echo "https://github.com/Kocurowy96/KocurDOS"
+    echo ""
 }
 
 function notatnik() {
