@@ -13,6 +13,8 @@ function display_prompt() {
 }
 
 function help() {
+    echo "KocurDOS ver. v1.1.0"
+    echo ""
     echo "about      - Wyświetla informacje o KocurDOS"
     echo "notatnik   - Otwiera notatnik"
     echo "kalkulator - Otwiera kalkulator"
@@ -36,7 +38,7 @@ function help() {
 function about() {
     echo ""
     echo "KocurDOS"
-    echo "Wersja: 1.1.1"
+    echo "Wersja: 1.1.0"
     echo ""
     echo "System KocurDOS jest stworzony przez Kocurowy96"
     echo "Jest on open-source czyli każdy może zobaczyć jego kod źródłowy"
