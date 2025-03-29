@@ -1,20 +1,12 @@
 #!/bin/bash
 
-# Logo ASCII KocurDOS
-echo " _  __                     _ ____  ____   ___   ____  ____  "
-echo "| |/ / ___   ___  ___  ___| | ___|/ ___| / _ \ / ___|/ ___| "
-echo "| ' / / _ \ / _ \/ _ \/ _ \ |___ \\___ \| | | | |    \___ \ "
-echo "| . \|  __/|  __/  __/  __/ |___) |___) | |_| | |___  ___) |"
-echo "|_|\_\\___| \___|\___|\___|_|____/|____/ \___/ \____||____/ "
-echo ""
-
 function display_prompt() {
     echo -n "$(pwd) | KocurDOS>> "
 }
 
 function help() {
     echo "about      - Wyświetla informacje o KocurDOS"
-    echo "notatnik   - Otwiera notatnik"
+    echo "notatnik   - Otwiera notatnik || Nie działa, użyj "knano"!"
     echo "kalkulator - Otwiera kalkulator"
     echo "tree       - Przeglądarka plików"
     echo "clear      - Czyści ekran"
@@ -28,7 +20,7 @@ function help() {
     echo "rename     - Zmienia nazwę plików"
     echo "type       - Wyświetla zawartość plików tekstowych"
     echo "flash      - Aktulizuje oprogramowanie z bios.kocurdos"
-    echo "knano - Otwiera nano w KocurDOS"
+    echo "knano      - Otwiera nano w KocurDOS"
     echo "help       - Wyświetla pomoc"
     echo "exit       - Wyjście z KocurDOS"
 }
@@ -36,11 +28,11 @@ function help() {
 function about() {
     echo ""
     echo "KocurDOS"
-    echo "Wersja: 1.1.1"
+    echo "Wersja: 1.1.2"
     echo ""
     echo "System KocurDOS jest stworzony przez Kocurowy96"
     echo "Jest on open-source czyli każdy może zobaczyć jego kod źródłowy"
-    echo "System jest napisany z pomocą AI"
+    echo "System jest napisany częściowo z pomocą AI, ale też samemu"
     echo "Wrazie jakiś błędów zgłoś je na GitHubie projektu"
     echo "https://github.com/Kocurowy96/KocurDOS"
     echo ""
@@ -261,7 +253,7 @@ while true; do
     read command
     case "$command" in
         about) about ;;
-        notatnik) notatnik ;;
+        # notatnik) notatnik ;; 
         kalkulator) kalkulator ;;
         tree) tree_view ;;
         clear) clear_screen ;;
